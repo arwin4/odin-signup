@@ -1,8 +1,40 @@
-body {
-  display: flex;
-  flex-direction: row;
+* {
+  /* box-sizing: border-box; */
 }
 
-img {
-  max-width: 400px;
+body {
+  margin: 0;
+  height: 100vh;
+
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+}
+
+.logo-body {
+  position: absolute;
+  width: 100%;
+  top: 30%;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  background-color: hsl(0, 0%, 0%, 0.2);
+}
+
+.logo {
+  width: 50px;
+}
+
+.content {
+  /* clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 7% 100%); */
+  background-color: aliceblue;
+}
+
+.hero-container {
+  position: relative;
+
+  background-image: url('./assets/background.webp');
+  background-size: cover;
 }
