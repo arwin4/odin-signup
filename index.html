@@ -26,7 +26,58 @@
         <p>Sign up <em>now</em> to get started.</p>
         <p>You <em>know</em> you want to.</p>
       </header>
-      <form>Form goes here.</form>
+      <form id="signup" action="" method="post">
+        Let's get started.
+
+        <fieldset>
+          <legend>Name</legend>
+          <label for="first_name">Given name</label>
+          <input
+            type="text"
+            name="first_name"
+            id="first_name"
+            autocomplete="given-name"
+            required
+          />
+
+          <label for="family_name">Family name</label>
+          <input
+            type="text"
+            name="family_name"
+            id="family_name"
+            autocomplete="family-name"
+            required
+          />
+        </fieldset>
+
+        <fieldset>
+          <label for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            autocomplete="email"
+            required
+          />
+
+          <label for="phone">Phone number</label>
+          <input
+            type="tel"
+            name="phone"
+            id="phone"
+            autocomplete="tel"
+            required
+          />
+        </fieldset>
+
+        <fieldset>
+          <label for="password">Password</label>
+          <input type="password" name="password" id="password" required />
+          <label for="password">Confirm password</label>
+          <input type="password" name="password" id="password" required />
+        </fieldset>
+      </form>
+      <button form="signup" type="submit">Submit</button>
       <p>Already have an account? <a href="">Log in</a></p>
     </div>
   </body>

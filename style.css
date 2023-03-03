@@ -10,6 +10,15 @@ body {
   grid-template-columns: 2fr 3fr;
 }
 
+/* Hero image */
+.hero-container {
+  position: relative;
+
+  /* Use background image to preserve aspect ratio */
+  background-image: url('./assets/background.webp');
+  background-size: cover;
+}
+
 .logo-body {
   position: absolute;
   width: 100%;
@@ -27,14 +36,13 @@ body {
   width: 50px;
 }
 
+/* Content */
 .content {
+  /* Working on a slanted border... */
   /* clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 7% 100%); */
   background-color: aliceblue;
 }
 
-.hero-container {
-  position: relative;
-
-  background-image: url('./assets/background.webp');
-  background-size: cover;
+form {
+  margin: 150px 0;
 }
