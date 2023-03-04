@@ -1,5 +1,10 @@
-* {
-  /* box-sizing: border-box; */
+:root {
+  /* Color palette */
+  --cadet-gray: hsla(192, 17%, 59%, 1);
+  --light-blue: hsla(188, 24%, 69%, 1);
+  --battleship-gray: hsla(37, 6%, 58%, 1);
+  --bone: hsla(47, 24%, 81%, 1);
+  --paynes-gray: hsla(199, 8%, 38%, 1);
 }
 
 body {
@@ -8,20 +13,19 @@ body {
 
   display: grid;
   grid-template-columns: 2fr 3fr;
+
+  background-image: url('./assets/background.webp');
+  background-size: cover;
 }
 
 /* Hero image */
 .hero-container {
   position: relative;
-
-  /* Use background image to preserve aspect ratio */
-  background-image: url('./assets/background.webp');
-  background-size: cover;
 }
 
 .logo-body {
   position: absolute;
-  width: 100%;
+  width: calc(100% + 25px); /* Match content margin */
   top: 30%;
 
   display: flex;
@@ -38,9 +42,13 @@ body {
 
 /* Content */
 .content {
-  /* Working on a slanted border... */
-  /* clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 7% 100%); */
-  background-color: aliceblue;
+  margin: 20px 25px;
+  padding: 10px 10px;
+
+  border: 3px solid var(--paynes-gray);
+  border-radius: 5px;
+
+  background-image: linear-gradient(var(--light-blue), var(--cadet-gray));
 }
 
 form {
