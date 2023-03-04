@@ -1,3 +1,6 @@
+* {
+  font-family: 'Archivo', sans-serif;}
+
 :root {
   /* Color palette */
   --cadet-gray: hsla(192, 17%, 59%, 1);
@@ -53,4 +56,16 @@ body {
 
 form {
   margin: 150px 0;
+}
+
+/* Photo credit */
+.credit {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  font-size: 0.8rem;
+
+  color: whitesmoke;
+  background-color: hsl(0, 0%, 0%, 0.4);
 }
