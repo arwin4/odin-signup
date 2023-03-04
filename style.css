@@ -117,6 +117,12 @@ input {
   position: relative;
 }
 
+input:focus {
+  outline: none;
+  border-color: var(--paynes-gray);
+  background-color: rgba(157, 190, 195, 0.5);
+}
+
 input + span {
   padding-right: 30px;
 }
@@ -128,6 +134,10 @@ input:not(:focus):not(:placeholder-shown):invalid + span::after {
   align-self: center;
   content: '❌';
   padding-left: 5px;
+}
+
+input:not(:focus):not(:placeholder-shown):invalid {
+  background-color: hsla(0, 33%, 44%, 0.6);
 }
 
 input:valid + span::after {
