@@ -6,10 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="stylesheet" href="style.css" />
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Archivo&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?&family=Archivo&display=swap"
+      rel="stylesheet"
+    />
 
     <title>Sign up</title>
   </head>
@@ -25,95 +28,109 @@
         class="credit"
         target="_blank"
         href="https://unsplash.com/photos/pkCbhmBdNGA"
-        >Photo credit Oskar Kadaksoo
+      >
+        Photo credit Oskar Kadaksoo
       </a>
     </div>
     <div class="content">
       <header>
-        <p>
+        <h3>
           This is not a real online service! You know you need something like
           this in your life to help you realize your deepest dreams.
-        </p>
-        <p>Sign up <em>now</em> to get started.</p>
-        <p>You <em>know</em> you want to.</p>
+        </h3>
+        <h2>Sign up <em>now</em> to get started.</h2>
+        <h3>You <em>know</em> you want to.</h3>
       </header>
       <form id="signup" action="" method="post">
-        Let's get started.
-
+        <h3>Let's get started.</h3>
         <fieldset>
-          <legend>Name</legend>
-          <label for="first_name">Given name</label>
-          <input
-            type="text"
-            name="first_name"
-            id="first_name"
-            autocomplete="given-name"
-            minlength="2"
-            maxlength="30"
-            required
-          />
-
-          <label for="family_name">Family name</label>
-          <input
-            type="text"
-            name="family_name"
-            id="family_name"
-            autocomplete="family-name"
-            minlength="2"
-            maxlength="40"
-            required
-          />
+          <div>
+            <label for="first_name">Given name</label>
+            <input
+              type="text"
+              name="first_name"
+              id="first_name"
+              autocomplete="given-name"
+              minlength="2"
+              maxlength="30"
+              spellcheck="false"
+              required
+            />
+          </div>
+          <div>
+            <label for="family_name">Family name</label>
+            <input
+              type="text"
+              name="family_name"
+              id="family_name"
+              autocomplete="family-name"
+              minlength="2"
+              maxlength="40"
+              spellcheck="false"
+              required
+            />
+          </div>
         </fieldset>
 
         <fieldset>
-          <label for="email">Email</label>
-          <input
-            type="email"
-            name="email"
-            id="email"
-            autocomplete="email"
-            required
-          />
+          <div>
+            <label for="email">Email</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              autocomplete="email"
+              spellcheck="false"
+              required
+            />
+          </div>
 
-          <label for="phone">Phone number</label>
-          <input
-            type="tel"
-            name="phone"
-            id="phone"
-            minlength="8"
-            maxlength="20"
-            autocomplete="tel"
-            required
-          />
+          <div>
+            <label for="phone">Phone number</label>
+            <input
+              type="tel"
+              name="phone"
+              id="phone"
+              minlength="8"
+              maxlength="20"
+              autocomplete="tel"
+              spellcheck="false"
+              required
+            />
+          </div>
         </fieldset>
 
         <fieldset>
-          <label for="password">Password</label>
-          <input
-            type="password"
-            name="password"
-            id="password"
-            minlength="8"
-            maxlength="64"
-            title="Password must be between 8 and 64 characters long"
-            autocomplete="new-password"
-            required
-          />
-          <label for="password">Confirm password</label>
-          <input
-            type="password"
-            name="password"
-            id="password"
-            minlength="8"
-            maxlength="64"
-            title="Password must be between 8 and 64 characters long"
-            autocomplete="new-password"
-            required
-          />
+          <div>
+            <label for="password">Password</label>
+            <input
+              type="password"
+              name="password"
+              id="password"
+              minlength="8"
+              maxlength="64"
+              title="Password must be between 8 and 64 characters long"
+              autocomplete="new-password"
+              required
+            />
+          </div>
+          <div>
+            <label for="password">Confirm password</label>
+            <input
+              type="password"
+              name="password"
+              id="password"
+              minlength="8"
+              maxlength="64"
+              title="Password must be between 8 and 64 characters long"
+              autocomplete="new-password"
+              required
+            />
+          </div>
         </fieldset>
       </form>
-      <button form="signup" type="submit">Submit</button>
-      <p>Already have an account? <a href="">Log in</a></p>
+      <button form="signup" type="submit">Create account</button>
+      <p class="login">Already have an account? <a href="">Log in</a></p>
     </div>
   </body>
 </html>
