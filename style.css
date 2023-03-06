@@ -148,6 +148,10 @@ label {
   font-variant-caps: all-small-caps;
 }
 
+.password-warning {
+  margin-left: 1rem;
+}
+
 /* Button */
 button {
   align-self: flex-start;
