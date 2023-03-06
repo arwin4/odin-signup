@@ -1,5 +1,5 @@
 function checkPasswordMatch(password2) {
-  let password1 = document.querySelector('#password').value;
+  const password1 = document.querySelector('#password').value;
   const warningText = document.querySelector('.password-warning');
 
   // Only check passwords when both meet requirements
