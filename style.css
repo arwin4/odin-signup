@@ -5,10 +5,6 @@
 :root {
   /* Color palette */
   --cadet-gray: hsla(192, 17%, 59%, 1);
-  --light-blue: hsla(188, 24%, 69%, 1);
-  --battleship-gray: hsla(37, 6%, 58%, 1);
-  --bone: hsla(47, 24%, 81%, 1);
-  --bone-light: rgb(248, 243, 223);
   --paynes-gray: hsla(199, 8%, 38%, 1);
 }
 
@@ -164,11 +160,12 @@ button {
   font-weight: bold;
   letter-spacing: 1px;
   color: snow;
+  text-shadow: 0px 2px 0px grey;
 
   background-color: var(--cadet-gray);
   border: 2px solid var(--paynes-gray);
   border-radius: 6px;
-  text-shadow: 0px 2px 0px grey;
+  box-shadow: 5px 5px 20px -10px black;
 }
 
 button:hover {
