@@ -3,7 +3,10 @@ function checkPasswordMatch(password2) {
   const warningText = document.querySelector('.password-warning');
 
   // Only check passwords when both meet requirements
-  if ((password1.length && password2.length) < 8) return;
+  if (password1.length < 8 || password2.length < 8) {
+    warningText.textContent = '';
+    return;
+  }
 
   if (password1 !== password2) {
     warningText.textContent = 'Passwords do not match.';
