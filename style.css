@@ -53,7 +53,7 @@ body {
   margin: 20px 25px;
   padding: 20px 30px;
   border-radius: 5px;
-  box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.567);
 
   font-size: 1rem;
 
@@ -73,7 +73,7 @@ form {
   align-self: center;
   padding: 1rem 2rem;
   padding-top: 0;
-  box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.3);
   border-radius: 20px 7px 20px 7px;
 }
 
@@ -105,7 +105,7 @@ input {
   border: 1px solid var(--cadet-gray);
   border-radius: 3px;
 
-  box-shadow: 10px 10px 20px -15px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
 }
 
 .input-field {
@@ -169,7 +169,7 @@ button {
   background-color: var(--cadet-gray);
   border: 2px solid var(--paynes-gray);
   border-radius: 6px;
-  box-shadow: 5px 5px 20px -10px black;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.3);
 }
 
 button:hover {
